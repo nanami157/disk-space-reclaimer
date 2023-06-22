@@ -13,12 +13,12 @@ name: Free Disk Space (Ubuntu)
 on: push
 
 jobs:
-  free-disk-space:
+  reclaim:
     runs-on: ubuntu-latest
     steps:
 
     - name: Free Disk Space (Ubuntu)
-      uses: insightsengineering/free-disk-space@v1
+      uses: insightsengineering/disk-space-reclaimer@v1
       with:
         # this might remove tools that are actually needed,
         # if set to "true" but frees about 6 GB
