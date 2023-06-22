@@ -36,7 +36,7 @@ runs:
   using: "composite"
   steps:
     - name: "Clean up disk space 🗑️"
-      run: bash core.sh
+      run: bash ${GITHUB_ACTION_PATH}/core.sh
       shell: bash
       env:
         ANDROID: "${{ inputs.android }}"
